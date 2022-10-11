@@ -1,1 +1,1 @@
-Learning Linked List for now from Puneet Sir. Will update here as I keep moving forward.
+Learning Linked List for now. Will update here as I keep moving forward.
