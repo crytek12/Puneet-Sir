@@ -50,11 +50,39 @@ struct node * getList()
     return head;
 }
 
+struct node* Getnode(int y)
+{
+    struct node *head;
+    head = (struct node *)malloc(sizeof(struct node));
+
+    head -> data = y;
+    head -> next = NULL;
+    return head;
+}
+
+// Insert a node at end
+int Insertatend(struct node *head, int x)
+{
+    struct node *p, *q;
+    p = head;
+    q = Getnode(x);
+
+    while (p -> next != NULL)
+    {
+        p = p -> next;
+    }
+
+    p -> next = q;
+    return 0;
+}
+
 int main()
 {
-    // struct node *h;   
-    // h = getList()
+    struct node *h;   
+    h = getList();
 
-    display(getList());
+    display(h);
+    Insertatend(h, 77);
+    display(h);
     return 0;
 }
