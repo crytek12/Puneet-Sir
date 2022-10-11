@@ -17,4 +17,15 @@ int main()
     a.link = &b;
     b.link = &c;
     c.link = &d;
+
+    p = &a;
+
+    while (p -> link != NULL)
+    {
+        printf("\t %d", p -> data);
+        p = p -> link;
+    }
+    printf("\t %d", p -> data);
+    
+    return 0;
 }
